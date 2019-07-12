@@ -50,13 +50,14 @@ nav>div {
 }
 
 /************
-	LAYOUT
+	MAIN LAYOUT
 ************/
 .grid-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(10, 225px);
 	grid-gap: 10px;
+	margin-bottom: 50px;
 }
 
 
@@ -132,4 +133,30 @@ nav>div {
 .grid-container .grid-item:nth-child(15) {
 	grid-area: 10 / 3 / span 1 / span 1;
 	background: #FCF8B9;
+}
+
+/************
+	FOOTER
+************/
+footer {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	height: 150px;
+}
+
+.company-info, .footer-info {
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+.footer-list {
+	margin: 0 30px;
+	list-style-type: none;
+	padding: 0;
+}
+
+.footer-list>li {
+	font-size: 0.85em;
+	margin: 8px 0;
 }
