@@ -1,30 +1,129 @@
+:root {
+  --titlefontsize: 25px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
 body {
 	max-width: 100%;
-	margin: auto;
+  margin: auto;
+  background-color: #FAFAFC;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .header-title {
-  margin-left: 20px;
+  margin-left: 15px;
+  font-size: var(--titlefontsize);
 }
 
-
+/***************
+  NAVIGATION
+***************/
 .nav-list {
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin: 0;
+  margin: 20px 0 25px 0;
   padding: 0;
 }
 
 .nav-item {
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.selected {
+  opacity: 1;
 }
 
 .nav-icon {
-  width: 80px;
-  height: 80px;
-  background-color: black;
+  width: 40px;
+  height: 40px;
+  background-color: #FEFFFF;
+  box-shadow: 2px 2px 3px grey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.nav-label {
+  margin: 10px 0 0 0;
+  font-weight: bold;
+}
+
+/***************
+  FEATURED
+***************/
+
+.featured-title {
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.featured-meals-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-flow: column;
+  overflow: scroll;
+}
+
+.featured-meals {
+  width: 160px;
+  height: 120px;
+  margin: 15px;
+  background-size: cover;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  box-shadow: 0px 6px 10px grey;
+}
+
+.pic1 {
+  background-image: url("https://images.pexels.com/photos/2694788/pexels-photo-2694788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.pic2 {
+  background-image: url("https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.pic3 {
+  background-image: url("https://images.pexels.com/photos/1527602/pexels-photo-1527602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.pic4 {
+  background-image: url("https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.featured-meals>p {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.featured-meals>span {
+  height: 20px;
+  width: 20px;
+  background: white;
+  color: black;
+  margin: 8px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
