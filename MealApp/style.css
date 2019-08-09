@@ -139,6 +139,7 @@ body {
 .orders-list {
   list-style: none;
   margin: 0px;
+  margin-bottom: 75px;
   padding: 0;
   border-top: 1px solid rgba(0,0,0,0.1);
   background-color: white;
@@ -149,10 +150,6 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-}
-
-.order-item:last-of-type {
-  /* border-bottom: 1px solid rgba(0,0,0,0.1); */
 }
 
 .order-item>p {
@@ -173,4 +170,59 @@ body {
 .selected-order>span {
   color: green;
   margin-right: 22px;
+}
+
+/***************
+  FOOTER
+***************/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  background: #FAFAFC;
+  font-family: 'Blinker', sans-serif;
+  font-size: 16px;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.footer-buttons {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 23px;
+  height: 23px;
+  border: 1.3px solid black;
+  border-radius: 50%;
+}
+
+.footer-label {
+  margin: 5px 0 10px 0;
+}
+
+.selected-footer>.footer-icon {
+  color: white;
+  background: black;
+}
+
+.selected-footer>.footer-label {
+  font-weight: bold;
 }
