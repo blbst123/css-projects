@@ -16,7 +16,7 @@ body {
 }
 
 .header-title {
-  margin-left: 15px;
+  margin: 20px 0 35px 15px;
   font-size: var(--titlefontsize);
 }
 
@@ -58,6 +58,7 @@ body {
 
 .nav-label {
   margin: 10px 0 0 0;
+  font-family: 'Blinker', sans-serif;
   font-weight: bold;
 }
 
@@ -66,7 +67,7 @@ body {
 ***************/
 
 .featured-title {
-  margin: 15px;
+  margin: 0px 15px;
   font-size: 20px;
   font-weight: bold;
   padding-top: 20px;
@@ -94,19 +95,19 @@ body {
 }
 
 .pic1 {
-  background-image: url("https://images.pexels.com/photos/2694788/pexels-photo-2694788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/2694788/pexels-photo-2694788.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 
 .pic2 {
-  background-image: url("https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/1268551/pexels-photo-1268551.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 
 .pic3 {
-  background-image: url("https://images.pexels.com/photos/1527602/pexels-photo-1527602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/1527602/pexels-photo-1527602.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 
 .pic4 {
-  background-image: url("https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/1435907/pexels-photo-1435907.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
 }
 
 .featured-meals>p {
@@ -127,3 +128,49 @@ body {
   border-radius: 3px;
 }
 
+.selected-meal>span {
+  color: green;
+}
+
+/***************
+  ORDERS
+***************/
+
+.orders-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.order-item:last-of-type {
+  /* border-bottom: 1px solid rgba(0,0,0,0.1); */
+}
+
+.order-item>p {
+  margin-left: 25px;
+  font-family: 'Blinker', sans-serif;
+  font-weight: bold;
+}
+
+.order-item>span {
+  margin-right: 25px;
+  font-size: 20px;
+}
+
+.selected-order {
+  background-color: #FAFAFC;
+}
+
+.selected-order>span {
+  color: green;
+  margin-right: 22px;
+}
